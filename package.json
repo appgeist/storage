@@ -2,6 +2,13 @@
   "name": "@appgeist/storage",
   "version": "1.0.1",
   "description": "An opinionated Express-based storage server featuring assets uploading and on-demand image-resizing, like a self-hosted Cloudinary",
+  "keywords": [
+    "storage",
+    "images",
+    "imagemagick",
+    "image-resize",
+    "webp"
+  ],
   "main": "index.js",
   "repository": "https://github.com/appgeist/storage",
   "bugs": {
