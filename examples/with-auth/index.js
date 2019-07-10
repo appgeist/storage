@@ -1,7 +1,7 @@
 const express = require('express');
 // eslint-disable-next-line import/no-extraneous-dependencies
 const delay = require('delay');
-const storage = require('../..');
+const storage = require('../..'); // require('@appgeist/storage') in your code
 
 const [host, port] = ['0.0.0.0', 3000];
 

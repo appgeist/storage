@@ -4,9 +4,9 @@ const compression = require('compression');
 const cors = require('cors');
 const helmet = require('helmet');
 
-const upload = require('./upload');
-const serve = require('./serve');
-const errorHandler = require('./errorHandler');
+const upload = require('./lib/upload');
+const serve = require('./lib/serve');
+const errorHandler = require('./lib/errorHandler');
 
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
