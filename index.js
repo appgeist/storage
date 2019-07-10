@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 const express = require('express');
 const morgan = require('morgan');
 const compression = require('compression');
@@ -13,25 +12,23 @@ const PRODUCTION = process.env.NODE_ENV === 'production';
 
 /**
  * Create a storage server Express-based instance
- *
- * @param {Object} options
- * @param {string} options.logPattern Log pattern provided to morgan,
+ * @param {Object} [options]
+ * @param {string} [options.logPattern] Log pattern provided to morgan,
  *    defaults to `:method :url :status - :response-time ms` in production and `dev` in development
- * @param {string} options.rootDir Folder to store files (relative to `cwd()`),
+ * @param {string} [options.rootDir] Folder to store files (relative to `cwd()`),
  *    defaults to `./files`
- * @param {string} options.tmpDir Temp folder used for uploading files,
+ * @param {string} [options.tmpDir] Temp folder used for uploading files,
  *    defaults to `require('os').tmpdir` in production and `./temp` relative to `cwd()` in development
- * @param {number} options.maxFileSize Maximum upload file size in bytes, defaults to `1024 * 1024 * 20` (20MB)
- * @param {number} options.maxPicturePixels Maximum upload file size in pixels,
+ * @param {number} [options.maxFileSize] Maximum upload file size in bytes, defaults to `1024 * 1024 * 20` (20MB)
+ * @param {number} [options.maxPicturePixels] Maximum upload file size in pixels,
  *    defaults to `1920 * 1080` (FullHD ~ 2 megapixels)
- * @param {number} options.maxUrlCacheEntries Maximum number of entries to keep in the file info cache,
+ * @param {number} [options.maxUrlCacheEntries] Maximum number of entries to keep in the file info cache,
  *    defaults to `10000000` (one million items)
- * @param {number|string} options.maxAge maxAge of served files,
+ * @param {number|string} [options.maxAge] maxAge of served files,
  *    a number representing milliseconds or a string in [ms format](https://www.npmjs.com/package/ms);
  *    defaults to `365 days` in production and `0` in development;
- * @param {function(string): boolean|Promise<boolean>} options.validateToken An optional function to
- *    validate upload request; its token parameter comes from `Authentication: Bearer token` header
- *    present on the request (think [JWT](https://jwt.io/)/[RFC-6750](https://tools.ietf.org/html/rfc6750))
+ * @param {validateTokenCallback} [options.validateToken] Function used to validate an upload request
+ *    based on its Authentication header value
  * @returns {Object} Express instance
  */
 module.exports = (options) => {
@@ -59,3 +56,10 @@ module.exports = (options) => {
 
   return app;
 };
+
+/**
+ * @callback validateTokenCallback
+ * @param {string} token Token to validate, coming from `Authentication: Bearer <token>` header
+ *    present on the request (see [JWT](https://jwt.io/)/[RFC-6750](https://tools.ietf.org/html/rfc6750))
+ * @returns {boolean|Promise<boolean>}
+ */
