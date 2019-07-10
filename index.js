@@ -29,7 +29,7 @@ const PRODUCTION = process.env.NODE_ENV === 'production';
  *    defaults to `365 days` in production and `0` in development;
  * @param {validateTokenCallback} [options.validateToken] Function used to validate an upload request
  *    based on its Authentication header value
- * @returns {Object} Express instance
+ * @returns {import('express')} Express instance
  */
 module.exports = (options) => {
   const { logPattern, rootDir, tmpDir, maxFileSize, maxPicturePixels, maxUrlCacheEntries, maxAge, validateToken } = {
