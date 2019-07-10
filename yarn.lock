@@ -2,32 +2,39 @@
 # yarn lockfile v1
 
 
-"@appgeist/ensure-dir@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@appgeist/ensure-dir/-/ensure-dir-1.0.1.tgz#9eebddb8a091d54e34bd123b97fe971f4bfc41a0"
-  integrity sha512-Hdp6J9l1fE55Xj3Ae7zVFH5ofhil2Bn6Fes3JaQyljqVSyWJe2wBMtn85lsCRXl4Bj6X4aojIZkFI2RFxHfHig==
+"@appgeist/ensure-dir@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@appgeist/ensure-dir/-/ensure-dir-1.0.2.tgz#928136cfcf6314a106887b2d093fb2d0b1c165bf"
+  integrity sha512-vTQYdbSF8s2hWOkVj/ssClSpTizbP22vV+fXdp4CqVJoNYvQoLHg4OZr2VhRwn59rSJCcsnocRbZJ5B1MzZcXg==
   dependencies:
     mkdirp "^0.5.1"
 
-"@appgeist/eslint-config-base@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@appgeist/eslint-config-base/-/eslint-config-base-1.0.2.tgz#dbe57906a1ab5cf7ba23a8885079432c526d4042"
-  integrity sha512-I7vqaf1Hq1DZqyF2ovhZS80cKrU86DxC9+A6pxrjbF6ymKGtTdE5nuin4oyrsAa2XY/d7bokjWUaWcwyHeHjsw==
-
-"@appgeist/exec@^1.0.3":
+"@appgeist/eslint-config-base@^1.0.3":
   version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@appgeist/exec/-/exec-1.0.3.tgz#94ff2ed99284a7716db8d465d70bc970b8c83b21"
-  integrity sha512-Wtuj4yiifVyRisGZ2JC54di63SVZrsHc1noSqZ8Op+ONvL28xoGxYZzGCuwp7QTmUuA1u/IrW+kpaQ+bRs9lcw==
+  resolved "https://registry.yarnpkg.com/@appgeist/eslint-config-base/-/eslint-config-base-1.0.3.tgz#8ce44c6f1191743cbda32856e22b6d66778cfeff"
+  integrity sha512-yeS4997us8Rw04Qi3FVOHFYVq8HA76TL7gVUlmmsuP+EirOk5seyd0aqZoMg6pPhYiuRhPJzmDVtGSRzljTKHg==
+  dependencies:
+    eslint "^6.0.1"
+    eslint-config-airbnb-base "^13.2.0"
+    eslint-config-prettier "^6.0.0"
+    eslint-plugin-import "^2.18.0"
+    eslint-plugin-prettier "^3.1.0"
+    prettier "^1.18.2"
 
-"@appgeist/file-exists@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@appgeist/file-exists/-/file-exists-1.0.1.tgz#c42a91803a77258237aeb61d4e43d5800f91f4d5"
-  integrity sha512-HDDVGXONB3bVGd6rnfIOdiOXyTIFgRxOlHgcd13/w5JLEL4atFWlPKJzvXnrUw2szpB89ynViOaqv3uKmP0TEA==
+"@appgeist/exec@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@appgeist/exec/-/exec-1.0.4.tgz#e313d71ce034477d6e6d3b754342c84064584b11"
+  integrity sha512-OSCI7wbwCWDhdkmFv+sov4DzQG4JzWgjTc1pj5us72oHYXgYtTkvNbPifT4SjN71IP1phNL8wnOVv5pG8Goavw==
 
-"@appgeist/get-file-from-url@^1.0.1":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@appgeist/get-file-from-url/-/get-file-from-url-1.0.1.tgz#38454637f97c03ebe37a56cbbf00630cc4dfab90"
-  integrity sha512-oc3fxWc9GUXovKVbTIsHTRN6XVGOMDuruHCkvqpAjns7Pme5vvai/1Ww8wgHcug12P+plFxilDcFxN3Deqa6fQ==
+"@appgeist/file-exists@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@appgeist/file-exists/-/file-exists-1.0.2.tgz#7a61e89d691ac8b631f9bee3bae3cb537828a716"
+  integrity sha512-/MVbOrSF2yk7GL42aK95g9EfZHbw3YFChlF2ofQXVfGAuEvn/0jQX19DVEiQ1Oz7qrHSpeLAoigm+MaWm8Mkjw==
+
+"@appgeist/get-file-from-url@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@appgeist/get-file-from-url/-/get-file-from-url-1.0.2.tgz#b09f60dfca0a8c96e5996e55e503b1de314c1e98"
+  integrity sha512-cpoSiFHz+EvpxRbJgy5axhB6zR8wzQR904WkmzfjtDrzToeE97zF3JnvAzUs+t0BluNWo27Jg1MahPI4iOC8Qw==
 
 "@babel/code-frame@^7.0.0":
   version "7.0.0"
@@ -721,9 +728,9 @@ express@^4.17.1:
     vary "~1.1.2"
 
 external-editor@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/external-editor/-/external-editor-3.0.3.tgz#5866db29a97826dbe4bf3afd24070ead9ea43a27"
-  integrity sha512-bn71H9+qWoOQKyZDo25mOMVpSmXROAsTJVVVYzrrtol3d4y+AsKjf4Iwl2Q+IuT0kFSQ1qo166UuIwqYq7mGnA==
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/external-editor/-/external-editor-3.1.0.tgz#cb03f740befae03ea4d283caed2741a83f335495"
+  integrity sha512-hMQ4CX1p1izmuLYyZqLMO/qGNw10wSv9QDCPfzXfyFrOaCSSoRfqE1Kf1s5an66J5JZC62NewG+mK49jOCtQew==
   dependencies:
     chardet "^0.7.0"
     iconv-lite "^0.4.24"
@@ -1159,9 +1166,9 @@ locate-path@^2.0.0:
     path-exists "^3.0.0"
 
 lodash@^4.17.11:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
+  version "4.17.14"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
+  integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
 
 media-typer@0.3.0:
   version "0.3.0"
@@ -1913,6 +1920,6 @@ x-xss-protection@1.1.0:
   integrity sha512-rx3GzJlgEeZ08MIcDsU2vY2B1QEriUKJTSiNHHUIem6eg9pzVOr2TL3Y4Pd6TMAM5D5azGjcxqI62piITBDHVg==
 
 xtend@^4.0.0:
-  version "4.0.1"
-  resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
-  integrity sha1-pcbVMr5lbiPbgg77lDofBJmNY68=
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
+  integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
