@@ -51,8 +51,9 @@ app.use(
     tmpDir: "./temp-uploads",
     maxFileSize: 1024 * 1024 * 50, // 50 megabytes
     maxPicturePixels: 3840 * 2160, // 4K
+    // a method to validate the incoming upload requests, based on their
+    // `Authorization: Bearer <token>` header
     tokenValidationHandler: async token => {
-      // a method to validate upload requests
       // ...
       const isValid = await myValidationApiMethod(token);
       return isValid;
