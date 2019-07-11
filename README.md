@@ -51,7 +51,7 @@ app.use(
     tmpDir: "./temp-uploads",
     maxFileSize: 1024 * 1024 * 50, // 50 megabytes
     maxPicturePixels: 3840 * 2160, // 4K
-    validateToken: async token => {
+    tokenValidationHandler: async token => {
       // a method to validate upload requests
       // ...
       const isValid = await myValidationApiMethod(token);
@@ -67,7 +67,7 @@ app.listen(3000, err => {
 });
 ```
 
-See [examples](examples) for more.
+See [storage-example-simple](https://github.com/appgeist/storage-example-simple) and [storage-example-with-auth](https://github.com/appgeist/storage-example-with-auth) for more.
 
 ## Default config options
 
@@ -75,9 +75,9 @@ See [index.js](index.js) for more info on the default config options. JSDoc comm
 
 ## Uploading files
 
-### Reuqest payload
+### Request payload
 
-Files can be uploaded by `POST`ing to the mountpoint or a subfolder (i.e. `POST /assets` or `POST /assets/a/subfolder/to/store/the/uploaded/files`) with the following JSON body payload:
+Files can be uploaded by `POST`ing to the mountpoint or a subfolder (i.e. `POST /assets` or `POST /assets/a/subfolder/to/store/the/uploaded/files`) with the following body payload:
 
 ```js
 {
@@ -87,7 +87,7 @@ Files can be uploaded by `POST`ing to the mountpoint or a subfolder (i.e. `POST 
 
 ...where file represents the file `multipart/form-data` (provided, for instance by an `<input type="file" />` tag, see [multer](https://www.npmjs.com/package/multer) docs for more info).
 
-A file can be dowloaded from an accesible remote location by `POST`ing a URL instead of file data:
+Instead of simply uploading a file, the server can be instructed to dowload it from an accesible remote location by `POST`ing a URL instead of file data:
 
 ```js
 {
@@ -105,6 +105,10 @@ Examples:
 
 - uploading `catz.jpg` to `/assets` will generate a file like `/assets/9752d427-e6e2-4868-8abf-720db82421c2.webp`;
 - uploading `doc.pdf` to `/assets/docs` will generate a file like `/assets/docs/9752d427-e6e2-4868-8abf-720db82421c2.pdf`;
+
+### Token-based authorization
+
+Bearer token based authorization can be enabled by setting a `tokenValidationHandler` in the initialization options to a function. The `tokenValidationHandler` method will receive the upload request bearer token (specified as `Authentication: Bearer <token>` header) as its only parameter and must return a boolean or a Promise resolving to a boolean value.
 
 ### Server response
 
