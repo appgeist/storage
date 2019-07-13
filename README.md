@@ -154,6 +154,10 @@ Cropping and resizing only work for pictures. Other types of assets will only be
 
 Files generated for different sizes and formats **are never deleted**. **This can quickly eat up your server space.** Make sure to implement a mechanism to delete old/unnecessary files!!!
 
+## License
+
+The [ISC License](LICENSE).
+
 [npm-image]: https://img.shields.io/npm/v/@appgeist/storage.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/@appgeist/storage
 [license-image]: https://img.shields.io/npm/l/@appgeist/storage.svg?style=flat-square
