@@ -73,7 +73,7 @@ See [@appgeist/example-storage-simple](https://github.com/appgeist/example-stora
 
 ## Default config options
 
-See [index.js](index.js) for more info on the default config options. JSDoc comments are also provided for IDE support.
+Have a look at [index.js](index.js) to see the default config options; JSDoc comments are provided for IDE support.
 
 ## Uploading files
 

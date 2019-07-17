@@ -7,13 +7,15 @@ const errorHandler = require('./lib/errorHandler');
 const PRODUCTION = process.env.NODE_ENV === 'production';
 
 /**
- * Create a storage server Express-based instance
+ * Create a storage server instance
  * @param {Object} [options]
  * @param {string} [options.storageDir] Folder to store files (relative to `cwd()`),
  *    defaults to `./storage`
  * @param {string} [options.tmpDir] Temp folder used for uploading files,
  *    defaults to `require('os').tmpdir` in production and `./temp` relative to `cwd()` in development
  * @param {number} [options.maxUploadSize] Maximum upload file size in bytes, defaults to `1024 * 1024 * 20` (20MB)
+ * @param {number} [options.pictureQuality] Picture quality (in percents) for stored files,
+ *    defaults to `25` (25%)
  * @param {number} [options.maxPicturePixels] Maximum stored file size in pixels,
  *    defaults to `1920 * 1080` (FullHD ~ 2 megapixels)
  * @param {number} [options.maxUrlCacheItems] Maximum number of entries to keep in the file info cache,
