@@ -31,7 +31,7 @@ storage().listen(3000, err => {
 });
 ```
 
-As Express middleware, With custom config options:
+As Express middleware, with custom config options:
 
 ```js
 const express = require("express");
