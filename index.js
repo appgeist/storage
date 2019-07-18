@@ -23,9 +23,9 @@ const PRODUCTION = process.env.NODE_ENV === 'production';
  * @param {number|string} [options.maxAge] maxAge of served files,
  *    a number representing milliseconds or a string in [ms format](https://www.npmjs.com/package/ms);
  *    defaults to `365 days` in production and `0` in development;
- * @param {uploadTokenValidationHandler} [options.tokenValidationHandler] Function used to validate an upload POST
+ * @param {TokenValidationHandler} [options.uploadTokenValidationHandler] Function used to validate an upload POST
  *    request based on its Authentication header value
- * @param {serveTokenValidationHandler} [options.tokenValidationHandler] Function used to validate a GET
+ * @param {TokenValidationHandler} [options.serveTokenValidationHandler] Function used to validate a GET
  *    request based on its Authentication header value
  * @returns {import('express')} Express instance
  */
@@ -78,7 +78,7 @@ module.exports = (options) => {
 };
 
 /**
- * @callback tokenValidationHandler
+ * @callback TokenValidationHandler
  * @param {string} token Token to validate, coming from `Authentication: Bearer <token>` header
  *    present on the request (see [JWT](https://jwt.io/)/[RFC-6750](https://tools.ietf.org/html/rfc6750))
  * @returns {boolean|Promise<boolean>}
