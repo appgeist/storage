@@ -23,14 +23,14 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "@appgeist/eslint-config-base": "^1.0.7",
+    "@appgeist/eslint-config-base": "^1.1.0",
     "@types/express": "^4.17.0"
   },
   "dependencies": {
-    "@appgeist/ensure-dir": "^1.0.4",
-    "@appgeist/exec": "^1.0.6",
-    "@appgeist/file-exists": "^1.0.5",
-    "@appgeist/get-file-from-url": "^1.0.4",
+    "@appgeist/ensure-dir": "^1.0.5",
+    "@appgeist/exec": "^1.0.7",
+    "@appgeist/file-exists": "^1.0.6",
+    "@appgeist/get-file-from-url": "^1.0.6",
     "express": "^4.17.1",
     "multer": "^1.4.2",
     "uuid": "^3.3.2"
