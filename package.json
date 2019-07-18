@@ -1,6 +1,6 @@
 {
   "name": "@appgeist/storage",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "An opinionated Express-based storage server featuring assets uploading and on-demand image-resizing, like a self-hosted Cloudinary",
   "keywords": [
     "storage",
