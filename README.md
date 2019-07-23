@@ -3,6 +3,8 @@
 [![NPM version][npm-image]][npm-url]
 [![License][license-image]][license-url]
 
+![AppGeist Storage](https://user-images.githubusercontent.com/581999/61737873-c8120c80-ad91-11e9-8442-d73f86dde003.png)
+
 An opinionated Express-based storage server featuring assets uploading and on-demand image-resizing. Like a self-hosted [Cloudinary](https://cloudinary.com).
 
 Uses [ImageMagick](https://imagemagick.org), [multer](https://www.npmjs.com/package/multer) and [UUID](https://www.npmjs.com/package/uuid).
