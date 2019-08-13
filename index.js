@@ -23,24 +23,10 @@ const PRODUCTION = process.env.NODE_ENV === 'production';
  * @param {number|string} [options.maxAge] maxAge of served files,
  *    a number representing milliseconds or a string in [ms format](https://www.npmjs.com/package/ms);
  *    defaults to `365 days` in production and `0` in development;
- * @param {TokenValidationHandler} [options.uploadTokenValidationHandler] Function used to validate an upload POST
- *    request based on its Authentication header value
- * @param {TokenValidationHandler} [options.serveTokenValidationHandler] Function used to validate a GET
- *    request based on its Authentication header value
  * @returns {import('express')} Express instance
  */
 module.exports = (options) => {
-  const {
-    storageDir,
-    tmpDir,
-    maxUploadSize,
-    pictureQuality,
-    maxPicturePixels,
-    maxUrlCacheItems,
-    maxAge,
-    uploadTokenValidationHandler,
-    serveTokenValidationHandler
-  } = {
+  const { storageDir, tmpDir, maxUploadSize, pictureQuality, maxPicturePixels, maxUrlCacheItems, maxAge } = {
     storageDir: './storage',
     tmpDir: PRODUCTION ? require('os').tmpdir : './temp',
     maxUploadSize: 1024 * 1024 * 20, // 20 megabytes
@@ -60,26 +46,17 @@ module.exports = (options) => {
       tmpDir,
       maxUploadSize,
       pictureQuality,
-      maxPicturePixels,
-      uploadTokenValidationHandler
+      maxPicturePixels
     })
   );
   app.use(
     serve({
       storageDir,
       maxUrlCacheItems,
-      maxAge,
-      serveTokenValidationHandler
+      maxAge
     })
   );
   app.use(errorHandler);
 
   return app;
 };
-
-/**
- * @callback TokenValidationHandler
- * @param {string} token Token to validate, coming from `Authentication: Bearer <token>` header
- *    present on the request (see [JWT](https://jwt.io/)/[RFC-6750](https://tools.ietf.org/html/rfc6750))
- * @returns {boolean|Promise<boolean>}
- */

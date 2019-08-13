@@ -47,20 +47,7 @@ app.use(
     tmpDir: "./temp-uploads",
     maxUploadSize: 1024 * 1024 * 50, // 50 megabytes
     pictureQuality: 90,
-    maxPicturePixels: 3840 * 2160, // 4K
-    // a method to validate the POST upload requests, based on their
-    // `Authorization: Bearer <token>` header
-    uploadTokenValidationHandler: async token => {
-      // ...
-      const isValid = await myValidationApiMethod({ token, operation: 'upload' });
-      return isValid;
-    }
-    // method to validate the GET requests
-    serveTokenValidationHandler: async token => {
-      // ...
-      const isValid = await myValidationApiMethod({ token, operation: 'serve' });
-      return isValid;
-    }
+    maxPicturePixels: 3840 * 2160 // 4K
   })
 );
 
@@ -109,10 +96,6 @@ Examples:
 
 - uploading `catz.jpg` to `/assets` will generate a file like `/assets/9752d427-e6e2-4868-8abf-720db82421c2.webp`;
 - uploading `doc.pdf` to `/assets/docs` will generate a file like `/assets/docs/9752d427-e6e2-4868-8abf-720db82421c2.pdf`;
-
-### Token-based authorization
-
-Bearer token based authorization can be enabled by providing `uploadTokenValidationHandler` and/or `serveTokenValidationHandler` functions in the storage options. A handler method will receive the request bearer token (specified as `Authentication: Bearer <token>` header) as its only parameter and must return a boolean or a Promise resolving to a boolean value.
 
 ### Server response
 
