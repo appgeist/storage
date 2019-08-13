@@ -25,18 +25,17 @@ const PRODUCTION = process.env.NODE_ENV === 'production';
  *    defaults to `365 days` in production and `0` in development;
  * @returns {import('express')} Express instance
  */
-module.exports = (options) => {
-  const { storageDir, tmpDir, maxUploadSize, pictureQuality, maxPicturePixels, maxUrlCacheItems, maxAge } = {
+module.exports = (
+  { storageDir, tmpDir, maxUploadSize, pictureQuality, maxPicturePixels, maxUrlCacheItems, maxAge } = {
     storageDir: './storage',
     tmpDir: PRODUCTION ? require('os').tmpdir : './temp',
     maxUploadSize: 1024 * 1024 * 20, // 20 megabytes
     pictureQuality: 85, // 85%
     maxPicturePixels: 1920 * 1080, // FullHD ~ 2 megapixels
     maxUrlCacheEntries: 10000000, // one million items
-    maxAge: PRODUCTION ? '365 days' : 0, // one year for production, none for development
-    ...options
-  };
-
+    maxAge: PRODUCTION ? '365 days' : 0 // one year for production, none for development
+  }
+) => {
   const app = express();
 
   app.use(express.json());
