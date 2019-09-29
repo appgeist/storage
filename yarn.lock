@@ -2,40 +2,40 @@
 # yarn lockfile v1
 
 
-"@appgeist/ensure-dir@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@appgeist/ensure-dir/-/ensure-dir-1.1.0.tgz#ab57050a7e128244e29f7a31325bc194d1e36c31"
-  integrity sha512-0Fl4+2r89KbE5+CE+9+z1bduup9d8fohrZLLOgD2F14DV+hXYbo0sMYi+Ziz3TMRYuUjRsOvWWJ74N7mOKvoVw==
+"@appgeist/ensure-dir@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@appgeist/ensure-dir/-/ensure-dir-1.1.1.tgz#f01849d296894da00c27164e14cabee7e28e80f0"
+  integrity sha512-LqLx+Cm/H03xA2asNqgSY5Je1sVT/WlEnrZJil5nsw4lsrqmyZ0s77T6ysBArDCvETwrm4mxfS4q+bOOCio8xQ==
   dependencies:
     mkdirp "^0.5.1"
 
-"@appgeist/eslint-config-base@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@appgeist/eslint-config-base/-/eslint-config-base-1.2.0.tgz#b9d405fa7b6e0ff3bb6715925cf0e4cd57d4e2b5"
-  integrity sha512-rPOC9zSm4qyD5swNkQe1SrJgR9QChI5rTP5YtBIhwsoF/fgDCZH3w3o7lMjorwqDANbsvXGxzH+Cgwc2INtgEg==
+"@appgeist/eslint-config-base@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@appgeist/eslint-config-base/-/eslint-config-base-1.2.1.tgz#9eb0a93d68161d8e7acff15e09949ffe1d0d8749"
+  integrity sha512-npUfugTlOgmBDQDKhCE/TOWejERXjRtXR9e1O2Bvv13F93zVWJ4J5nEoEage8D88KFBbZgEElKLvXzKw0SZtjw==
   dependencies:
     babel-eslint "^10.0.3"
-    eslint "^6.2.2"
+    eslint "^6.5.0"
     eslint-config-airbnb-base "^14.0.0"
-    eslint-config-prettier "^6.1.0"
+    eslint-config-prettier "^6.3.0"
     eslint-plugin-import "^2.18.2"
-    eslint-plugin-prettier "^3.1.0"
+    eslint-plugin-prettier "^3.1.1"
     prettier "^1.18.2"
 
-"@appgeist/exec@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@appgeist/exec/-/exec-1.1.0.tgz#b95fe3b053cb75bb840c9fa6cd826c0b781fa83c"
-  integrity sha512-hbByMdO5IvkyEDTT2K6F66cPvHrmvH0KQ1tNjqxAEn/hu97T0vAEiMKHVorfY94P0sjxsHiv3PGOMcZfovrNLQ==
+"@appgeist/exec@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@appgeist/exec/-/exec-1.1.1.tgz#50075b3254082bbde4b0b47310a5fa86c688c33a"
+  integrity sha512-yaV8VfDjBtE1Hev/TcPfYaWdeAt1xOxwOGnqfL/6wj2ppbJgaPQX8Tb9KV0P/UeWpzX/A9eFMikJf1tVH7ZyJg==
 
-"@appgeist/file-exists@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@appgeist/file-exists/-/file-exists-1.1.0.tgz#465bf70ed1361eff6274e15768b3f655f2b6168b"
-  integrity sha512-18w4FgaBR4gyX8ZD30uLC+Y0jdo8oL4iSDN2JqUrswEiB/189NNtZgX1QnpD5oeFWarsKrinCV/mVvLX8HvHTw==
+"@appgeist/file-exists@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@appgeist/file-exists/-/file-exists-1.1.1.tgz#60fb99b9337eaf6bb1917ec8979ddba0a7a38892"
+  integrity sha512-Lk4W2zskKH8QxsL0t0f49QFcDHBpoOGfqMqHAViH3jBjLdM41HXevDtC6/EGAFhCpkTIXE3Y8SIYkf5+DdRlzQ==
 
-"@appgeist/get-file-from-url@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@appgeist/get-file-from-url/-/get-file-from-url-1.1.0.tgz#4db1b1da4e6101d0cc11744e616b0c3bc56424b0"
-  integrity sha512-ahOiF8cFiddbRh5uPlz3zkJI8uqh3jxoHeWFQOBMj2rROEBim/a+kWdTaTEHGur6L878GjeRbgdNj/qqRovNPA==
+"@appgeist/get-file-from-url@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@appgeist/get-file-from-url/-/get-file-from-url-1.1.1.tgz#3950cc4953774a71ec7dfa61e59eb170210bf2b1"
+  integrity sha512-7aJF08BanZmdmuNQj8MLBJUTF6Zaiy46iRvZ3ug98v/Js6M2dAq4H0ldojNmLzml75BoF1TPXZzErLMVzaaO5A==
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.5.5":
   version "7.5.5"
@@ -553,10 +553,10 @@ eslint-config-airbnb-base@^14.0.0:
     object.assign "^4.1.0"
     object.entries "^1.1.0"
 
-eslint-config-prettier@^6.1.0:
-  version "6.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.1.0.tgz#e6f678ba367fbd1273998d5510f76f004e9dce7b"
-  integrity sha512-k9fny9sPjIBQ2ftFTesJV21Rg4R/7a7t7LCtZVrYQiHEp8Nnuk3EGaDmsKSAnsPj0BYcgB2zxzHa2NTkIxcOLg==
+eslint-config-prettier@^6.3.0:
+  version "6.3.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.3.0.tgz#e73b48e59dc49d950843f3eb96d519e2248286a3"
+  integrity sha512-EWaGjlDAZRzVFveh2Jsglcere2KK5CJBhkNSa1xs3KfMUGdRiT7lG089eqPdvlzWHpAqaekubOsOMu8W8Yk71A==
   dependencies:
     get-stdin "^6.0.0"
 
@@ -593,10 +593,10 @@ eslint-plugin-import@^2.18.2:
     read-pkg-up "^2.0.0"
     resolve "^1.11.0"
 
-eslint-plugin-prettier@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.0.tgz#8695188f95daa93b0dc54b249347ca3b79c4686d"
-  integrity sha512-XWX2yVuwVNLOUhQijAkXz+rMPPoCr7WFiAl8ig6I7Xn+pPVhDhzg4DxHpmbeb0iqjO9UronEA3Tb09ChnFVHHA==
+eslint-plugin-prettier@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-prettier/-/eslint-plugin-prettier-3.1.1.tgz#507b8562410d02a03f0ddc949c616f877852f2ba"
+  integrity sha512-A+TZuHZ0KU0cnn56/9mfR7/KjUJ9QNVXUhwvRFSR7PGPe0zQR6PTkmyqg1AtUUEOzTqeRsUwyKFh0oVZKVCrtA==
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
@@ -625,10 +625,10 @@ eslint-visitor-keys@^1.1.0:
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.1.0.tgz#e2a82cea84ff246ad6fb57f9bde5b46621459ec2"
   integrity sha512-8y9YjtM1JBJU/A9Kc+SbaOV4y29sSWckBwMHa+FGtVj5gN/sbnKDf6xJUl+8g7FAij9LVaP8C24DUiH/f/2Z9A==
 
-eslint@^6.2.2:
-  version "6.2.2"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.2.2.tgz#03298280e7750d81fcd31431f3d333e43d93f24f"
-  integrity sha512-mf0elOkxHbdyGX1IJEUsNBzCDdyoUgljF3rRlgfyYh0pwGnreLc0jjD6ZuleOibjmnUWZLY2eXwSooeOgGJ2jw==
+eslint@^6.5.0:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-6.5.0.tgz#304623eec903969dd5c9f2d61c6ce3d6ecec8750"
+  integrity sha512-IIbSW+vKOqMatPmS9ayyku4tvWxHY2iricSRtOz6+ZA5IPRlgXzEL0u/j6dr4eha0ugmhMwDTqxtmNu3kj9O4w==
   dependencies:
     "@babel/code-frame" "^7.0.0"
     ajv "^6.10.0"
